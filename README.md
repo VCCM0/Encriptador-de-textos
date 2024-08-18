@@ -12,7 +12,8 @@
 
 ### Descripción de la aplicación
 <p>
-  La función principal de esta aplicacion es encriptar un texto ingresado por el usuario siguiendo unas condiciones establecidas acontinuación:
+  La función principal de esta aplicacion es encriptar un texto ingresado por el usuario, desencriptar el mismo texto y la opción de un boton que te permita copiar y pegar 
+  el texto desencriptado siguiendo unas condiciones establecidas acontinuación:
 </p>
 
 - El texto ingresado solo debe ser en minusculas
@@ -28,7 +29,7 @@ La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"
 
 ```
-## Estructución de la logica del programa
+## Estructura logica del programa
 <p>
   Para la estructura logica del programa utilicé "Pseudocodigo" y "Diagrama de flujo"
 </p>
@@ -66,5 +67,11 @@ A continuación, presento el pseudocódigo que utilicé para guiarme y abstraer 
   <hr>
 </p>
 <img src="https://github.com/user-attachments/assets/df1ef1e9-7b23-44ec-80ca-e7f589557180" alt="Portada principal del encriptador" width="800" height="400" >
+
+## Tecnologias utilizadas
+
+- JavaScript
+- HTML
+- CSS 5
 
  
