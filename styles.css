@@ -1,0 +1,135 @@
+/*Variables para configurar colores */
+:root{
+    --color-primario:#040D12;
+    --color-secundario:#183D3D;
+    --color-terciario:#5C8374;
+    --color-hover:#93B1A6;
+}
+
+
+
+
+/* Fondo y configuración global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-primario);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--color-hover);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Título con efecto de escritura */
+#title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-terciario);
+    border-radius: 10px;
+    font-size: 25px;
+    resize: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+textarea:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--color-terciario);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}
+
+button[onclick="copiarTexto()"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
